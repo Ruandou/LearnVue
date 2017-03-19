@@ -33,29 +33,27 @@
                         </li>
                     </ul>
                 </div>
-
                 <div id="shopping-cart">
                     <div id="clear-shopping-cart">
                         <label>购物车</label>
                         <input type="button" value="[清空]"
                             @click="clearShoppingCart"/>
                     </div>
-                    <ul id="cart-list" class="cart-list"
+                    <ul id="cart-list"
                         v-show="showShoppingCart.show">
                         <cart-list-item v-for="orderLine in orderLines"
                             :order-line="orderLine">
                         </cart-list-item>
                     </ul>
-                    <div id="cart-total" class="cart-total">
+                    <div id="cart-total">
                         共<span class="total-number">{{ quantity }}</span>份,
                         总计<span class="total-amount">¥{{ amount }}</span>
                     </div>
-                    <div id="cart-icon" class="cart-icon" @click="showOrHideShoppingCart">
+                    <div id="cart-icon" @click="showOrHideShoppingCart">
                         <a ><img src="images\cart-icon2.png" alt="购物车" /></a>
                         <input type="button" value="去结算" />
                     </div>
                 </div>
-
             </div>
             <div id="footer">
             </div>
