@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* Lay-out framework*/
 #header {
     width: 100%;
     background: red;
@@ -11,7 +12,7 @@
 
 #main {
     width: 960px;
-    margin: 0px auto;
+    margin: 0px 260px 0px auto;
 }
 
 #footer {
@@ -20,14 +21,16 @@
     height: 100px;
 }
 
+/* Content */
 #content {
+    position: relative;
     padding: 9px;
 }
 
 #content .food-class {
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px dotted #08b;
+    border: 1px dotted #eee;
 }
 
 #content .food-class h2 {
@@ -47,6 +50,10 @@
     border: 1px #eee solid;
 }
 
+#content .food:hover {
+    border: 1px #f00 solid;
+}
+
 #content .food a {
     color: #333;
     text-decoration: none;
@@ -64,13 +71,30 @@
 }
 
 #content .food .food-to-sell {
+    display: block;
+    /*width: 248px;*/
+    height: 30px;
     color: #f00;
     font-size: 1.1em;
     font-weight: bold;
     margin-top: 10px;
 }
 
-#content .food .food-to-sell .add-to-card {
+#content .food .food-to-sell .food-price {
+    width: 109px;
+    float: left;
+    margin: 5px 0;
+}
+
+#content .food .food-to-sell .num-in-cart {
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin: 5px 0;
+    padding-right: 9px;
+}
+
+#content .food .food-to-sell .add-to-cart {
     float: right;
     outline: none;
     border: none;
@@ -79,11 +103,13 @@
     color: #f00;
     font-size: 1.1em;
     font-weight: bold;
+    cursor: pointer;
 }
 
+/* Menu item */
 #menu {
     position: fixed;
-    top: 200px;
+    top: 160px;
     left: 5%;
     width: 80px; 
 }
@@ -94,7 +120,7 @@ li {
 
 #menu ul li a {
     display: block;
-    margin: 5px 0;
+    margin: 10px 0;
     font-size: 14px;
     font-weight: bold;
     color: #333;
@@ -102,10 +128,13 @@ li {
     height: 50px;
     text-decoration: none;
     text-align: center;
+    border-radius: 5px;
 }
 
 #menu ul li a span {
     display: block;
+    height: 50px;
+    padding: 18px 0;
 }
 
 #menu ul li a:hover,
@@ -116,4 +145,129 @@ li {
 
 .clearfix {
     clear: both;
+}
+
+/* Shopping cart */
+#shopping-cart {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 290px;
+    border: 1px solid #08b;
+    border-bottom: 0;
+}
+
+#clear-shopping-cart {
+    background: #333;
+    height: 24px;
+    padding: 6px;
+    color: #fff;
+}
+
+#clear-shopping-cart input {
+    background: #333;
+    font-size: 16px;
+    color: #08b;
+    width: 60px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#cart-icon {
+    background: #333;
+    height: 50px;
+}
+
+#cart-icon img {
+    padding: 7px;
+    width: 36px;
+    height: 36px;
+}
+
+#cart-icon input {
+    float: right;
+    width: 80px;
+    height: 36px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 7px 10px;
+}
+
+#shopping-cart .cart-total {
+    height: 36px;
+    background: #eee;
+    padding: 7px;
+}
+
+#shopping-cart .cart-total .total-number {
+    font-weight: bold;
+    color: #f00;
+    margin: 0 5px;
+}
+
+#shopping-cart .cart-total .total-amount {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f00;
+    margin: 0 5px;
+}
+
+#shopping-cart .cart-list {
+    background: #ffe;
+    overflow: auto;
+}
+
+#shopping-cart .cart-list li {
+    display: block;
+    width: 280px;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    padding: 0 5px;
+}
+
+#shopping-cart .cart-list li:hover {
+    background: #eee;
+}
+
+#shopping-cart .cart-list-name {
+    width: 130px;
+    float: left;
+    height: 24px;
+    padding: 13px 0;
+    text-align: left;
+}
+
+#shopping-cart .cart-list-number {
+    width: 90px;
+    float: left;
+    height: 24px;
+    margin: 12px 0;
+    border: 1px solid #eee;
+}
+
+#shopping-cart .cart-list-number input {
+    width: 24px;
+    height: 24px;
+    float: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#shopping-cart .cart-list-number div {
+    width: 42px;
+    height: 24px;
+    float: left;
+    text-align: center;
+}
+
+#shopping-cart .cart-list-amount {
+    width: 58px;
+    height: 24px;
+    float: right;
+    padding: 13px 0;
+    text-align: center;
 }
