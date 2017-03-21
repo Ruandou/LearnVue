@@ -54,7 +54,33 @@
             </template>
             <button v-on:click="toggleLoginType">Toggle login type</button>
         </div>
+
+        <div id="app-9">
+            <template v-if="ok">
+                <h1>Title</h1>
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+            </template>
+            <h1 v-if="ok">Yes</h1>
+            <h1 v-else>No</h1>
+        </div>
+        <div id="app-10">
+            <ul>
+                <li v-for="(value, key, index) in object">
+                    {{ value }} - {{ key }} - {{ index }}
+                </li>
+            </ul>
+        </div>
+        <div id="app-11">
+            <span v-for="n in 10">
+                {{ n }}
+            </span>
+        </div>
         <script>
+            var app11 = new Vue({
+                el: "#app-11"
+            });
+
             var app = new Vue({
                 el: "#app",
                 data: {
@@ -134,6 +160,24 @@
                         } else {
                             this.loginType = "username";
                         }
+                    }
+                }
+            })
+
+            var app9 = new Vue({
+                el: "#app-9",
+                data: {
+                    ok: true
+                }
+            })
+
+            var app10 = new Vue({
+                el: "#app-10",
+                data: {
+                    object: {
+                        FirstName: "John",
+                        LastName: "Doe",
+                        Age: 30
                     }
                 }
             })

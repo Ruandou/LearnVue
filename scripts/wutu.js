@@ -116,8 +116,8 @@ Vue.component("food", {
             order.amount += this.fd_price;
             if (this.fd_number > 100) {
                 this.fd_number = 1;
-                order.quantity -= 99;
-                order.amount -= this.fd_price * 99;
+                order.quantity -= 100;
+                order.amount -= this.fd_price * 100;
             }
         }
     }
@@ -170,8 +170,8 @@ Vue.component("cart-list-item", {
             order.quantity++;
             order.amount += this.orderLine.fd_price;
             if (this.orderLine.fd_number > 100) {
-                order.quantity -= 99;
-                order.amount -= this.orderLine.fd_price * 99;
+                order.quantity -= 100;
+                order.amount -= this.orderLine.fd_price * 100;
             }
         },
         minus: function () {
