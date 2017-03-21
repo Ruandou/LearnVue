@@ -41,8 +41,9 @@
                     </div>
                     <ul id="cart-list"
                         v-show="showShoppingCart.show">
-                        <cart-list-item v-for="orderLine in orderLines"
-                            :order-line="orderLine">
+                        <cart-list-item v-for="(orderLine, index) in orderLines"
+                            :order-line="orderLine"
+                            :key="index">
                         </cart-list-item>
                     </ul>
                     <div id="cart-total">

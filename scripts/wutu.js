@@ -27,27 +27,69 @@ foodClass.prototype.toString = function () {
     return str;
 }
 
-var foods = [
-    new food(1, "剁椒鱼头", "images/shuangseyutou.jpg", 60, 12),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
+var stapleFoods = [
+    new food("sf1", "米饭", "images/mifan.jpg", 2, 600),
+    new food("sf2", "臊子面", "images/saozimian.jpg", 32, 0)
+];
+
+var sdes = [
+    new food("sd1", "剁椒鱼头", "images/shuangseyutou.jpg", 60, 12),
+    new food("sd2", "辣椒炒肉", "images/lajiaochaorou.jpg", 20, 100),
+    new food("sd3", "辣子鸡", "images/laziji.jpg", 32, 268),
+    new food("sd4", "风味辣子猪手", "images/fengweilazizhushou.jpg", 52, 300),
+    new food("sd5", "猪脚爱上鸭", "images/zhujiaoaishangya.jpg", 60, 88),
+    new food("sd6", "毛血旺", "images/maoxuewang.jpg", 32, 110),
+    new food("sd7", "过江鱼", "images/guojiangyu.jpg", 28, 600),
+    new food("sd8", "湖南小炒肉", "images/hunanxiaochaorou.jpg", 22, 800),
+    new food("sd9", "虎皮扣肉", "images/hupikourou.jpg", 35, 100),
+    new food("sd10", "坛子菜炒五花肉", "images/tanzicaichaowuhuarou.jpg", 36, 166)
+];
+
+var stirFries = [
+    new food("sd1", "剁椒鱼头", "images/shuangseyutou.jpg", 60, 12),
+    new food("sd2", "辣椒炒肉", "images/lajiaochaorou.jpg", 20, 100),
+    new food("sd3", "辣子鸡", "images/laziji.jpg", 32, 268),
+    new food("sd4", "风味辣子猪手", "images/fengweilazizhushou.jpg", 52, 300),
+    new food("sd5", "毛血旺", "images/maoxuewang.jpg", 32, 110),
+    new food("sd6", "过江鱼", "images/guojiangyu.jpg", 28, 600),
+    new food("sd7", "湖南小炒肉", "images/hunanxiaochaorou.jpg", 22, 800),
+    new food("sd8", "虎皮扣肉", "images/hupikourou.jpg", 35, 100),
     new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
     new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
     new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
     new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
     new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
     new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100)
-]
-var stapleFood = new foodClass("class-1", "主食", foods, true);
-var signitureDishes = new foodClass("class-2", "招牌菜", foods, false);
-var stirFry = new foodClass("class-3", "炒菜", foods, false);
-var coldDishes = new foodClass("class-4", "凉菜", foods, false)
-var drink = new foodClass("class-5", "酒水", foods, false);
+];
+
+var cdes = [
+    new food("cd1", "胭脂冬瓜", "images/yanzhidonggua.jpg", 15, 88),
+    new food("cd2", "香辣海带丝", "images/xianglahaidaisi.jpg", 5, 200),
+    new food("cd3", "葱油拌金针菇", "images/congyoubanjinzhengu.jpg", 6, 111),
+    new food("cd4", "凉拌蒜蓉茄子", "images/liangbansuanrongqiezi.jpg", 18, 67),
+    new food("cd5", "酸辣拌豆腐", "images/suanlabandoufu.jpg", 5, 65),
+    new food("cd6", "凉拌土豆丝", "images/liangbantudousi.jpg", 12, 123),
+    new food("cd7", "手撕茄子", "images/shousiqiezi.jpg", 12, 3),
+    new food("cd8", "香拌藕片", "images/xiangbanoupian.jpg", 12, 20),
+    new food("cd9", "凉拌海带丝", "images/liangbanhaidaisi.jpg", 6, 100)
+];
+
+var drinks = [
+    new food("drink1", "可乐", "images/kele.jpg", 5, 10),
+    new food("drink2", "雪碧", "images/xuebi.jpg", 5, 36),
+    new food("drink3", "加多宝", "images/jiaduobao.jpg", 5, 63),
+    new food("drink4", "玉米汁", "images/yimizhi.jpg", 10, 2),
+    new food("drink5", "红牛", "images/hongniu.jpg", 10, 3),
+    new food("drink6", "乌梅汁", "images/wumeizhi.jpg", 6, 123),
+    new food("drink7", "橙汁", "images/chengzhi.jpg", 12, 1),
+    new food("drink8", "老酸奶", "images/laosuannai.jpg", 10, 8)
+];
+
+var stapleFood = new foodClass("class-1", "主食", stapleFoods, true);
+var signitureDishes = new foodClass("class-2", "招牌菜", sdes, false);
+var stirFry = new foodClass("class-3", "炒菜", stirFries, false);
+var coldDishes = new foodClass("class-4", "凉菜", cdes, false)
+var drink = new foodClass("class-5", "饮品", drinks, false);
 
 var foodClasses = [stapleFood, signitureDishes, stirFry, coldDishes, drink];
 
