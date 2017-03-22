@@ -135,7 +135,7 @@ var menuVM = new Vue({
 Vue.component("food", {
     template: '\
         <div class="food">\
-            <a href="#" @click.prevent="">\
+            <a href="#" @click.prevent>\
                 <img :src="pictureUrl" :alt="name" />\
                 <div>{{ name }}</div>\
             </a>\
