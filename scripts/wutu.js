@@ -46,20 +46,22 @@ var sdes = [
 ];
 
 var stirFries = [
-    new food("sd1", "剁椒鱼头", "images/shuangseyutou.jpg", 60, 12),
-    new food("sd2", "辣椒炒肉", "images/lajiaochaorou.jpg", 20, 100),
-    new food("sd3", "辣子鸡", "images/laziji.jpg", 32, 268),
-    new food("sd4", "风味辣子猪手", "images/fengweilazizhushou.jpg", 52, 300),
-    new food("sd5", "毛血旺", "images/maoxuewang.jpg", 32, 110),
-    new food("sd6", "过江鱼", "images/guojiangyu.jpg", 28, 600),
-    new food("sd7", "湖南小炒肉", "images/hunanxiaochaorou.jpg", 22, 800),
-    new food("sd8", "虎皮扣肉", "images/hupikourou.jpg", 35, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100),
-    new food(2, "辣椒炒肉", "images/shuangseyutou.jpg", 20, 100)
+    new food("sf1", "豆角炒腊肉", "images/doujiaochaolarou.jpg", 12, 122),
+    new food("sf2", "姜葱炒花甲", "images/jiangcongchaohuajia.jpg", 28, 100),
+    new food("sf3", "酸菜鱼", "images/suancaiyu.jpg", 59, 46),
+    new food("sf4", "湘西腊肉炒蒜苔", "images/xiangxilarouchaosuantai.jpg", 49, 7),
+    new food("sf5", "姜辣焖鸡", "images/jianglamenji.jpg", 59, 3),
+    new food("sf6", "十里香牛肉", "images/shilixiangniurou.jpg", 59, 16),
+    new food("sf7", "秘制串烧虾", "images/mizhichuanshaoxia.jpg", 59, 5),
+    new food("sf8", "辣些年错过的大鱼", "images/laxieniancuoguodedayu.jpg", 59, 19),
+    new food("sf9", "湘炒羊里脊", "images/xiangchaoyangliji.jpg", 39, 28),
+    new food("sf10", "毛氏红烧肉", "images/maoshihongshaorou.jpg", 49, 17),
+    new food("sf11", "大碗花菜", "images/dawanhuacai.jpg", 32, 64),
+    new food("sf12", "豆角7号", "images/doujiaoqihao.jpg", 32, 16),
+    new food("sf13", "干锅鸡杂", "images/ganguojiza.jpg", 28, 22),
+    new food("sf14", "干锅千页豆腐", "images/ganguoqianyedoufu.jpg", 28, 76),
+    new food("sf15", "干锅手撕包菜", "images/ganguoshousibaocai.jpg", 22, 79),
+    new food("sf16", "地三鲜", "images/disanxian.jpg", 20, 15)
 ];
 
 var cdes = [
